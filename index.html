@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <div class="bg-white font-kumb h-[1000]">
+            <div class="font-family: Kumbh Sans, sans-serif;">
+                <div class="justify-between">
+                <header class="flex items-center md:ml-[250] ml-[40] md:pt-[15]">
+                    <div class="gap-4">
+                        <div class="md:hidden cursor-pointer h-[20] font-bold onclick="toggleMenu()">
+                         ☰
+                       </div>
+                       <script>
+                         function toggleMenu() {
+                          var menu = document.getElementById("menu");
+                             menu.classList.toggle("md:hidden");
+                         }
+                   </script>
+                   </div>
+                   <div class="w-[]">
+                    <h1 class="font-bold text-3xl ml-[20]">sneakers</h1>
+                <div id="menu" class="text-slate-400 text-sm ml-[100] items-center hidden ">
+                    <span>Collections</span>
+                    <span class="ml-[15]">Men </span>
+                    <span class="ml-[15]">Women </span>
+                    <span class="ml-[15]"> About</span>
+                    <span class="ml-[15]">Contact</span>
+                </div>     
+            </div>
+              <div class="flex md:ml-[400] gap-8 items-center ml-[110]">
+                    <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/icon-cart.svg" alt="" class="h-[15]">
+                    <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/image-avatar.png" alt="" class="h-[30]">
+                   </div>
+                </div>
+                </header>
+                <hr class="mt-[40] ml-[250] mr-[250]">
+            </div>
+
+            <div>
+                <div class="md:flex grid" >
+                      <div class="relative w-full max-w-lg">
+                     <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-1.jpg" alt="" class="md:h-[400] h-[390] md:mt-[80] mt-[30] md:ml-[300] rounded-md">
+                     <div class="absolute md:hidden left-4 top-1/2 transform -translate-y-1/2 ">
+                        <button class="rounded-full text-white bg-white bg-opacity-70 focus:outline none p-2 hover:bg-opacity-90">
+                     <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/icon-previous.svg" alt="" fill="none" > 
+                    </button>
+                 </div>
+                 <div class=" absolute md:hidden left-4 top-1/2 transform -translate-y-1/2 ml-[330] ">
+                    <button class="rounded-full text-white bg-white text bg-opacity-70 focus:outline none p-2 hover:bg-opacity-90">
+                     <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/icon-next.svg" alt=""> 
+                    </button>
+                </div>
+                   </div>
+                     <div class="md:mt-[120] md:ml-[250] ml-[30] mt-[30]">
+                        <h1 class="text-sm font-semibold text-slate-400">SNEAKER COMPANY</h1>
+
+                        <h1 class="text-4xl text-gray-950 font-bold mt-[20]">Fall Limited Edition <br> Sneakers</h1 class="text-5xl">
+                      
+                        <p class="text-sm mt-[35] font-medium text-slate-400">
+                        These low-profile sneakers are your perfect casual wear <br> companion. Featuring a 
+                        durable rubber outer sole, they’ll <br> withstand everything the weather can offer.
+                       </p>
+                       <div class="flex grid gap-9 mb-[20] items-center">
+                      <div class="mt-[10] flex">
+                        <p class=" font-bold text-gray-950 text-2xl">$125.00</p>
+                        <button class="w-[45] rounded h-[20] mt-[8] text-align-center ml-[10] font-bold text-white bg-gray-900"> 50%</button>
+                    </div>
+                    <p class="pt-[10] md:pt-[1] text-slate-400 line-through"> $250.00 </p>
+                    </div>
+                      <div class="md:flex grid gap-7">
+                         <button class="flex bg-slate-200 gap-5 items-center w-[300] md:h-[30] h-[45] md:w-[120] rounded-md">
+                            <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/icon-minus.svg" alt="" class="md:ml-[10] ml-[10]">
+                            <p class="md:ml-[13] ml-[90] text-gray-950 font-bold">0</p>
+                            <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/icon-plus.svg" alt="" class="md:ml-[20] ml-[120]">
+                         </button>
+                         <button class="text-gray-950 flex gap-4 bg-orange-500 md:w-[200] w-[300] md:h-[30] h-[45] items-center rounded-md">
+                            <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/icon-cart.svg" alt="" class="md:ml-[20] ml-[30]">
+                           <p class="font-bold ml-[40] "> Add to cart</p>
+                        </button>
+                      </div>
+                     </div>
+             </div>
+        </div>
+
+        <div class="md:flex justify-between w-[400] mt-[20] ml-[300] rounded-md grid-cols-2 h-screen hidden md:block">
+            <a href="">
+               <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="" class="rounded-md h-[65] border-5 active:border-yellow focus:border-orange cursor-pointer"  onclick="openLightbox('ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg')">
+            </a>
+            <a href="">
+                <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="" class="rounded-md h-[65] cursor-pointer"  onclick="openLightbox('ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg')">
+            </a>
+            <a href="">
+                <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="" class="rounded-md h-[65] cursor-pointer" onclick="openLightbox('ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg')">
+            </a>
+            <a href="">
+                <img src="ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="" class="rounded-md h-[65] cursor-pointer" onclick="openLightbox('ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg')">
+            </a>
+            
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-30 hidden items-center justify-center" onclick="openLightbox()">
+        <img id="lightbox-image" class="max-w-full max-h-full" onclick="event.stopPropagation()">
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = imageSrc;
+            lightbox.classList.remove('active');
+            lightbox.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('active');
+        }
+          // Close lightbox with Escape key
+          document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+        });
+    </script>
+
+
+
+
+
+
+     </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.tailwindcss.com"></script>
+ </div>
+</body>
+</html>
+
